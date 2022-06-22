@@ -11,6 +11,9 @@ const port = process.env.PORT;
 app.get('/', (req, res) => {
     res.send('Express + TypeScript Server');
 });
+app.get('/ping', (req, res) => {
+    res.send('pong');
+});
 app.listen(port, () => {
-    console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
+    console.log(`⚡️[Servidor]: Server is running at https://localhost:${port}`);
 });
